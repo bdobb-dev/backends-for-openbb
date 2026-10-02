@@ -7,7 +7,7 @@ A comprehensive FastAPI application template for OpenBB Workspace that demonstra
 1. Install the required dependencies:
 
 ```bash
-pip install fastapi uvicorn requests plotly
+pip install -r requirements.txt
 ```
 
 2. Run the application:
