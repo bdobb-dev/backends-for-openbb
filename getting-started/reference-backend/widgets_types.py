@@ -351,7 +351,7 @@ def get_pdf_widget_base64():
 @router.get("/pdf_widget_url")
 def get_pdf_widget_url():
     """Serve a file through URL."""
-    file_reference = "https://openbb-assets.s3.us-east-1.amazonaws.com/testing/sample.pdf"
+    file_reference = "https://raw.githubusercontent.com/bdobb-dev/backends-for-openbb/main/getting-started/reference-backend/sample.pdf"
     if not file_reference:
         raise HTTPException(status_code=404, detail="File not found")
     return JSONResponse(
@@ -368,12 +368,12 @@ SAMPLE_PDFS = [
     {
         "name": "Sample",
         "location": "sample.pdf",
-        "url": "https://openbb-assets.s3.us-east-1.amazonaws.com/testing/sample.pdf",
+        "url": "https://raw.githubusercontent.com/bdobb-dev/backends-for-openbb/main/getting-started/reference-backend/sample.pdf",
     },
     {
         "name": "Bitcoin Whitepaper",
         "location": "bitcoin.pdf",
-        "url": "https://openbb-assets.s3.us-east-1.amazonaws.com/testing/bitcoin.pdf",
+        "url": "https://raw.githubusercontent.com/bdobb-dev/backends-for-openbb/main/getting-started/reference-backend/bitcoin.pdf",
     },
 ]
 
